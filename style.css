@@ -3,32 +3,42 @@ body{
     color:hsl(300, 43%, 22%);
     font-family:"League Spartan", sans-serif;
     padding:100px;
-    display:grid;
-    grid-column:auto;
-    height:max-content;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
 }
 
 header{
-    background-color: aqua;
+    display:flex;
+    flex-direction:row;
 }
 
 .leftside{
-    background-color: blue;
-    float:left;
+    display:flex;
+    justify-content: start;
+    flex-direction:column;
+    margin-right:20px;
+    width:300px;
 }
 
 .leftside h1{
+    padding-right:10px;
     font-size:30px;
+    margin-bottom:10px;
+    font-weight:800;
 }
 
 .leftside .description{
-    font-size:12px;
+    font-size:11px;
     color:hsl(303, 10%, 53%);
+    line-height:16px;
 }
 
 .rightside{
+    display:flex;
+    flex-direction:column;
     background-color: blueviolet;
-    float:right;
+    margin-left:80px;
 }
 
 .five-star{
@@ -42,11 +52,12 @@ header{
 main{
     display:flex;
     flex-direction:row;
+    justify-content: center;
 }
 
 .review-card{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     border:none;
     border-radius:20px;
     background-color:hsl(300, 43%, 22%);
@@ -69,4 +80,10 @@ footer{
     justify-content: center;
     text-align:center;
     font-size:10px;
+}
+
+@media(max-width:375){
+    main{
+        flex-wrap: wrap;
+    }
 }
