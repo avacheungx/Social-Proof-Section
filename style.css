@@ -1,0 +1,72 @@
+body{
+    background-color:hsl(0, 0%, 100%);
+    color:hsl(300, 43%, 22%);
+    font-family:"League Spartan", sans-serif;
+    padding:100px;
+    display:grid;
+    grid-column:auto;
+    height:max-content;
+}
+
+header{
+    background-color: aqua;
+}
+
+.leftside{
+    background-color: blue;
+    float:left;
+}
+
+.leftside h1{
+    font-size:30px;
+}
+
+.leftside .description{
+    font-size:12px;
+    color:hsl(303, 10%, 53%);
+}
+
+.rightside{
+    background-color: blueviolet;
+    float:right;
+}
+
+.five-star{
+    background-color: hsl(300, 24%, 96%);
+    border:none;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:700;
+}
+
+main{
+    display:flex;
+    flex-direction:row;
+}
+
+.review-card{
+    display:flex;
+    flex-direction:column;
+    border:none;
+    border-radius:20px;
+    background-color:hsl(300, 43%, 22%);
+    color:hsl(0, 0%, 100%);
+    margin:14px;
+    padding:16px;
+}
+.name{
+    font-size:12px;
+}
+.buyer{
+    color:hsl(333, 80%, 67%);
+    font-size:12px;
+}
+.review{
+    font-size:12px;
+}
+
+footer{
+    justify-content: center;
+    text-align:center;
+    font-size:10px;
+}
