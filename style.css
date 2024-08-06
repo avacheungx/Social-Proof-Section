@@ -2,7 +2,7 @@ body{
     background-color:hsl(0, 0%, 100%);
     color:hsl(300, 43%, 22%);
     font-family:"League Spartan", sans-serif;
-    padding:100px;
+    padding:200px;
     display:flex;
     flex-direction:column;
     justify-content: space-evenly;
@@ -17,28 +17,26 @@ header{
     display:flex;
     justify-content: start;
     flex-direction:column;
-    margin-right:20px;
-    width:300px;
+    width:400px;
 }
 
 .leftside h1{
     padding-right:10px;
-    font-size:30px;
+    font-size:50px;
     margin-bottom:10px;
-    font-weight:800;
+    font-weight:1000;
 }
 
 .leftside .description{
-    font-size:11px;
+    font-size:15px;
     color:hsl(303, 10%, 53%);
-    line-height:16px;
+    line-height:24px;
 }
 
 .rightside{
     display:flex;
     flex-direction:column;
-    background-color: blueviolet;
-    margin-left:80px;
+    justify-content:space-evenly;
 }
 
 .five-star{
@@ -47,33 +45,46 @@ header{
     border-radius:10px;
     font-size:14px;
     font-weight:700;
+    width:max-content;
+    padding:5px;
 }
 
-main{
+section{
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content:space-evenly;
+    width:auto;
 }
 
 .review-card{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     border:none;
-    border-radius:20px;
+    border-radius:10px;
     background-color:hsl(300, 43%, 22%);
     color:hsl(0, 0%, 100%);
-    margin:14px;
-    padding:16px;
+    padding:40px;
+    margin-inline-end:40px;
+    font-size:15px;
+    line-height:24px;
+}
+.card-title{
+    display:flex;
+}
+.card-title img{
+    border:none;
+    border-radius:50%;
 }
 .name{
-    font-size:12px;
+    font-weight:500;
 }
 .buyer{
     color:hsl(333, 80%, 67%);
-    font-size:12px;
+    font-weight:400;
 }
+
 .review{
-    font-size:12px;
+    font-weight:700;
 }
 
 footer{
